@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@100&family=PT+Sans&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 250px;
+    background-color: rgb(4, 4, 4);
+}
+
+.container1 {
+    margin: 2% 10%;
+}
+
+.container2 {
+    margin: 2% 10%;
+}
+
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    margin: 5% auto;
+    color: white;
+}
+
+span{
+    color: lime;
+}
+
+.header {
+    /* background-color: #7400d2; */
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+    margin: 5% 10%;
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, 0.621); */
+}
+
+.header:after {
+    content: "";
+    display: table;
+    clear: both;
+    /* border-radius: 10px; */
+}
+
+ul {
+    margin: 2% 10%;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type: none;
+    background: lime;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    transition: 0.5s;
+    margin: 2% auto;
+    /* border-radius: 5px; */
+    transform: scale(100%);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.226);
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd) {
+    background: lime;
+    transform: scale(100%);
+}
+
+ul li:hover {
+    background: rgb(165, 251, 165);
+    transform: scale(105%);
+}
+ul li.checked {
+    background-color: rgb(165, 251, 165);
+    text-decoration: line-through;
+    transform: scale(90%);
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: lavender;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+    border-radius: 15px;
+    color: black;
+}
+
+.close:hover {
+    color: rgb(1, 165, 1);
+    font-size: 25px;
+    /* color: white; */
+}
+
+input {
+    border: none;
+    border-radius: 15px;
+    width: 70%;
+    padding: 10px;
+    float: left;
+    font-size: 20px;
+    text-align: center;
+}
+
+.addtask {
+    padding: 10px;
+    width: 25%;
+    background: lime;
+    color: rgb(0, 0, 0);
+    float: right;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+    border-radius: 15px;
+    font-family:  'Ubuntu', sans-serif;
+}
+
+.addtask:hover {
+    background-color: white;
+    transform: scale(110%);
+}
+
+input::placeholder {
+    font-family:  'Ubuntu', sans-serif;
+    color: #000;
+}
